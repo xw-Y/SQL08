@@ -1,0 +1,71 @@
+信息系统与数据库技术练习8答题卡
+
+班级：     信息管理一班
+姓名：     余晓伟
+学号：     20190307109
+
+注：请将答案放置在序号下方。*/
+
+（一）
+1.
+USE EDUC
+
+2.
+
+UPDATE Books
+SET Bname='高等数学',Price=35.6
+WHERE Author='张建林'
+
+3.
+UPDATE Books
+SET Discount=Discount-0.5
+
+4.
+SELECT *
+FROM Books
+
+5.
+SELECT TOP10*  
+FROM Student
+
+
+6.
+SELECT TOP 20 PERCENT *
+FROM SC
+
+
+7.
+SELECT *
+FROM Student
+WHERE Sex=女
+
+
+8.
+SELECT *
+FROM SC
+WHERE Wages>=9000
+
+9.
+SELECT Bname,Author,Publisher,ISBN
+FROM Books
+
+10.
+SELECT DISTINCT Cid
+FROM Books
+
+11.
+SELECT Bname,Author,Publisher,PublisherDate
+FROM Books
+WHERE YEAR(WorkDate)=2012
+
+12.
+SELECT Sid AS 学号,Cid AS 课程号,SCscore AS 成绩,
+FROM Books
+
+13.
+SELECT Sid,Sname,Sex,DATEDIFF(YY,Birth,GETDATE()) AS Age
+FROM Books
+
+14.
+SELECT *,Price*Discount AS DiscountPrice,Price-Price*Discount AS Economize
+FROM Books
